@@ -1,6 +1,5 @@
-import { useState } from "react";
+import CustomCreateShell from "../CustomCreateShell"
 import PasswordItem from "./PasswordItem"
-import Dialog from "../Dialog";
 
 export interface Password {
   name: string,
@@ -17,8 +16,6 @@ const passwords: Password[] = [
 
 function PasswordList() {
 
-  const [isOpen, setIsOpen] = useState(false);
-
 
   return <div className="w-full" >
     <h1 className="text-2xl mb-10 ">Passwords</h1>
@@ -28,10 +25,8 @@ function PasswordList() {
       ))
     }
     </ul>
-    <button onClick={() => setIsOpen(true)} >Open Dialog</button>
-    <Dialog isOpen={isOpen} onClose={() => setIsOpen(false)}>
-      <h2>Dummy dialog</h2>
-    </Dialog>
+
+    <CustomCreateShell />
 
   </div>
 
