@@ -10,7 +10,7 @@ export default function Layout({ children }: Props) {
     w-full h-screen bg-zinc-950 text-zinc-50 box-border p-5 flex 
     " >
     <Sidebar />
-    <section className="p-5" >
+    <section className="p-5 w-full" >
       {children}
     </section>
   </main>

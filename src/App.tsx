@@ -1,9 +1,10 @@
 import Layout from "./components/Layout";
+import PasswordList from "./components/Passwords/PasswordsList";
 
 function App() {
 
   return <Layout>
-    <div>Hello world</div>
+    <PasswordList />
   </Layout>
 
 }
