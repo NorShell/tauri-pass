@@ -23,7 +23,7 @@ function Dialog({ isOpen, onClose, children }: DialogProps) {
       onClose={onClose}
       className="
       box-border p-5 w-1/2 h-1/2 bg-zinc-950  text-zinc-50 backdrop:bg-black/80
-      outline-zinc-950 border border-dashed border-zinc-900
+      border border-dashed border-zinc-900
       ">
       {children}
     </dialog>
